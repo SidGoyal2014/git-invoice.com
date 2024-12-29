@@ -3,11 +3,14 @@
 # git-invoice.com
 Transform your GitHub pull requests and commits into professional invoices effortlessly with Git Invoice, designed for freelancers and developers.
 
+[git-invoice.com](www.git-invoice.com)
 
+
+
+## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
 First, run the development server:
 
