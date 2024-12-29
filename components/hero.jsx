@@ -28,7 +28,8 @@ export function HeroComponent() {
       title: "Streamlined Process",
       description:
         "Generate professional invoices from your GitHub contributions in three simple steps. No complex setup, just straightforward invoicing.",
-      detail: "Integrates with GitHub for easy authentication and contribution tracking",
+      detail:
+        "Integrates with GitHub for easy authentication and contribution tracking",
     },
     {
       icon: GitPullRequest,
@@ -45,7 +46,6 @@ export function HeroComponent() {
       detail: " ",
     },
   ];
-  
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-primary-50 to-background pt-16 md:pt-12 lg:pt-16">
@@ -92,10 +92,8 @@ export function HeroComponent() {
                 Join waitlist
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-
-            
             </motion.div>
-              {/* Stats 
+            {/* Stats 
             <motion.div
               className="flex items-center space-x-2 text-primary font-semibold"
               initial={{ opacity: 0, y: 20 }}

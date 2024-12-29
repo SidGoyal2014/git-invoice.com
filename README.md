@@ -1,16 +1,14 @@
 ![image](https://github.com/user-attachments/assets/c88e51f7-c40b-4966-b787-fd53d396ecbf)
 
 # git-invoice.com
+
 Transform your GitHub pull requests and commits into professional invoices effortlessly with Git Invoice, designed for freelancers and developers.
 
 [git-invoice.com](https://www.git-invoice.com/)
 
-
-
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 
 First, run the development server:
 
@@ -42,4 +40,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-

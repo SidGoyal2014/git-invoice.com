@@ -33,9 +33,7 @@ export function CommitList({
       <h2 className="text-2xl font-bold mb-4">Commits</h2>
 
       {commits.length == 0 && (
-        <p className="text-muted-foreground">
-          No commits selected yet.
-        </p>
+        <p className="text-muted-foreground">No commits selected yet.</p>
       )}
 
       {commits.map((commit, index) => (

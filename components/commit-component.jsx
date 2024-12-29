@@ -6,7 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const CommitHoursComponent = ({ commit, handleLogHoursForCommit, session }) => {
   const [localHours, setLocalHours] = useState(0);
@@ -47,7 +52,7 @@ const CommitHoursComponent = ({ commit, handleLogHoursForCommit, session }) => {
             Authorization: `Bearer ${token}`, // Use OAuth token for authentication
             Accept: "application/vnd.github.v3+json",
           },
-        }
+        },
       );
 
       if (!response.ok) {
@@ -87,11 +92,13 @@ const CommitHoursComponent = ({ commit, handleLogHoursForCommit, session }) => {
               Authorization: `Bearer ${token}`,
               Accept: "application/vnd.github.v3+json",
             },
-          }
+          },
         );
 
         if (!response.ok) {
-          throw new Error(`Failed to fetch commit details: ${response.statusText}`);
+          throw new Error(
+            `Failed to fetch commit details: ${response.statusText}`,
+          );
         }
 
         const data = await response.json();
@@ -122,7 +129,9 @@ const CommitHoursComponent = ({ commit, handleLogHoursForCommit, session }) => {
           <div className="flex items-center space-x-4">
             <GitCommit className="h-8 w-8 text-primary" />
             <div>
-              <CardTitle className="text-2xl font-bold">{commitDetails?.commit?.message || "Commit"}</CardTitle>
+              <CardTitle className="text-2xl font-bold">
+                {commitDetails?.commit?.message || "Commit"}
+              </CardTitle>
               <p className="text-sm text-muted-foreground">
                 {commit.sha.slice(0, 7)}
               </p>
@@ -133,16 +142,13 @@ const CommitHoursComponent = ({ commit, handleLogHoursForCommit, session }) => {
       </CardHeader>
       <CardContent className="pt-6">
         <div className="space-y-4">
-          
           {error && <p className="text-red-500">Error: {error}</p>}
           {commitDetails && (
             <>
               <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center space-x-2">
                   <User className="h-4 w-4" />
-                  <span>
-                    {commitDetails.commit.author.name} 
-                  </span>
+                  <span>{commitDetails.commit.author.name}</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Calendar className="h-4 w-4" />
@@ -151,7 +157,6 @@ const CommitHoursComponent = ({ commit, handleLogHoursForCommit, session }) => {
               </div>
 
               <div>
-               
                 <p className="text-sm">
                   <strong>Files Changed:</strong>{" "}
                   {commitDetails.files?.length || 0}
@@ -170,7 +175,12 @@ const CommitHoursComponent = ({ commit, handleLogHoursForCommit, session }) => {
           <div className="mt-6">
             <h3 className="text-lg font-semibold mb-2">Commits</h3>
             {commitDetails?.files?.map((file, index) => (
-              <Accordion type="single" collapsible className="w-full" key={file.filename}>
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full"
+                key={file.filename}
+              >
                 <AccordionItem value={`item-${index}`}>
                   <AccordionTrigger
                     onClick={() => fetchCommitDiff(commit.sha)} // Fetch diff on click

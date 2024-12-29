@@ -39,7 +39,7 @@ const MainContentComponent = ({
     setHoursWorkedData((prev) => {
       const updated = [...prev];
       const index = updated.findIndex((entry) => entry.prId === prId);
-  
+
       if (index !== -1) {
         updated[index].hours = hours;
       } else {
@@ -54,16 +54,16 @@ const MainContentComponent = ({
           hours,
         });
       }
-  
+
       return updated;
     });
   };
-  
+
   const handleLogHoursForCommit = (commitSha, hours) => {
     setCommitHoursData((prev) => {
       const updated = [...prev];
       const index = updated.findIndex((entry) => entry.commitSha === commitSha);
-  
+
       if (index !== -1) {
         updated[index].hours = hours;
       } else {
@@ -76,11 +76,10 @@ const MainContentComponent = ({
           hours,
         });
       }
-  
+
       return updated;
     });
   };
-  
 
   const handleFormChange = (updatedFormData) => {
     setFormData(updatedFormData);
@@ -89,7 +88,7 @@ const MainContentComponent = ({
 
   return (
     <div>
-      {selectedPRs.length > 0 && (
+      {selectedPRs.length > 0 &&
         selectedPRs.map((pr) => {
           const commitsForPR = getCommitsForPR(pr.id);
           const filteredCommits = commitsForPR.filter((commit) =>
@@ -112,12 +111,10 @@ const MainContentComponent = ({
               />
             </div>
           );
-        })
-      ) }
+        })}
 
       {/*<h2>Non PR Commits:</h2>*/}
-      {unrelatedCommits.length > 0 && (
-        
+      {unrelatedCommits.length > 0 &&
         unrelatedCommits.map((commit) => (
           <CommitHoursComponent
             key={commit.sha}
@@ -125,8 +122,7 @@ const MainContentComponent = ({
             handleLogHoursForCommit={handleLogHoursForCommit}
             session={session}
           />
-        ))
-      ) }
+        ))}
 
       <CustomInputFormComponent
         session={session}

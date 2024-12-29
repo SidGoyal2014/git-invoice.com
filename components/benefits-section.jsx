@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-const words = ['Developers', 'Freelancers', 'Engineers', 'Consultants', 'PMs'];
+const words = ["Developers", "Freelancers", "Engineers", "Consultants", "PMs"];
 
 export default function BenefitsSection() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -19,7 +19,7 @@ export default function BenefitsSection() {
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-            Benefits for{' '}
+            Benefits for{" "}
             <span className="inline-block relative">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -37,12 +37,20 @@ export default function BenefitsSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-8">
-  Git Invoice simplifies your billing process, ensuring <span className="font-semibold text-orange-600">accurate tracking</span> of your GitHub contributions. With <span className="font-semibold text-orange-600">professional-quality invoices</span>, you'll leave a lasting impression on clients. The platform is also <span className="font-semibold text-orange-600">easy to use</span>, taking the hassle out of invoicing.
-</p>
-
+            Git Invoice simplifies your billing process, ensuring{" "}
+            <span className="font-semibold text-orange-600">
+              accurate tracking
+            </span>{" "}
+            of your GitHub contributions. With{" "}
+            <span className="font-semibold text-orange-600">
+              professional-quality invoices
+            </span>
+            , you'll leave a lasting impression on clients. The platform is also{" "}
+            <span className="font-semibold text-orange-600">easy to use</span>,
+            taking the hassle out of invoicing.
+          </p>
         </div>
       </div>
     </section>
   );
 }
-

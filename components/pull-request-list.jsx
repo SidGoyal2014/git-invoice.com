@@ -39,11 +39,8 @@ export function PullRequestList({
     <div className="space-y-2">
       <h2 className="text-2xl font-bold mb-4">Pull Requests</h2>
 
-      
       {pullRequests.length == 0 && (
-        <p className="text-muted-foreground">
-          No pull requests selected yet.
-        </p>
+        <p className="text-muted-foreground">No pull requests selected yet.</p>
       )}
 
       {pullRequests.map((pr) => (

@@ -18,33 +18,34 @@ import { PullRequestList } from "./pull-request-list";
 import { CommitList } from "./commit-list";
 
 const HARD_CODED_REPOS = [
-  
   {
-    "id": 2,
-    "full_name": "johnsmith/webapp-dashboard",
-    "name": "WebApp Dashboard",
-    "description": "A modern, customizable dashboard for web applications with real-time data updates.",
-    "stargazers_count": 1,
-    "forks_count": 2
+    id: 2,
+    full_name: "johnsmith/webapp-dashboard",
+    name: "WebApp Dashboard",
+    description:
+      "A modern, customizable dashboard for web applications with real-time data updates.",
+    stargazers_count: 1,
+    forks_count: 2,
   },
   {
-    "id": 1,
-    "full_name": "johnsmith/backend-api",
-    "name": "Backend API",
-    "description": "A RESTful API built with Node.js and Express for managing user data and authentication.",
-    "stargazers_count": 3,
-    "forks_count": 2
+    id: 1,
+    full_name: "johnsmith/backend-api",
+    name: "Backend API",
+    description:
+      "A RESTful API built with Node.js and Express for managing user data and authentication.",
+    stargazers_count: 3,
+    forks_count: 2,
   },
   {
-    "id": 3,
-    "full_name": "johnsmith/react-native-chat",
-    "name": "React Native Chat",
-    "description": "A cross-platform real-time chat app built using React Native and Firebase for mobile freelancers.",
-    "stargazers_count": 2,
-    "forks_count": 1
-  }
-]
-
+    id: 3,
+    full_name: "johnsmith/react-native-chat",
+    name: "React Native Chat",
+    description:
+      "A cross-platform real-time chat app built using React Native and Firebase for mobile freelancers.",
+    stargazers_count: 2,
+    forks_count: 1,
+  },
+];
 
 export function LeftMenuComponent({ repos = [], onSelectionChange }) {
   const { data: session } = useSession();

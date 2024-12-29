@@ -1,7 +1,7 @@
 // eslint-disable-next-line next/no-html-link-for-pages
 
 "use client";
-import { Star } from 'lucide-react';
+import { Star } from "lucide-react";
 
 import { useSession, signIn, signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
@@ -25,20 +25,22 @@ export function NavbarComponent() {
           </Link>
         </div>
 
-
-
         <Button
-      variant="outline"
-      size="sm"
-      className="flex items-center space-x-2 text-black"
-      onClick={() => window.open('https://github.com/ezzcodeezzlife/git-invoice.com', '_blank')}
-    >
-      <Star className="w-4 h-4 hover:text-primary" />
-      <span>Star on GitHub</span>
-    </Button>
+          variant="outline"
+          size="sm"
+          className="flex items-center space-x-2 text-black"
+          onClick={() =>
+            window.open(
+              "https://github.com/ezzcodeezzlife/git-invoice.com",
+              "_blank",
+            )
+          }
+        >
+          <Star className="w-4 h-4 hover:text-primary" />
+          <span>Star on GitHub</span>
+        </Button>
 
-
-{/*
+        {/*
         <div className="flex items-center space-x-4">
           {!session ? (
             <Button

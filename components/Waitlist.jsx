@@ -1,12 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const Waitlist = () => {
   return (
-    <div id="waitlist" className="w-full pt-8  min-h-[40vh] flex flex-col justify-center items-center px-4 sm:px-8">
+    <div
+      id="waitlist"
+      className="w-full pt-8  min-h-[40vh] flex flex-col justify-center items-center px-4 sm:px-8"
+    >
       <div className="text-center mb-6">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl pb-4">Waitlist Signup</h1>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl pb-4">
+          Waitlist Signup
+        </h1>
         <p className="text-gray-600 mt-2 max-w-[600px] mx-auto">
-          We’re working hard to make Git Invoice perfect for you. In the meantime, sign up to know when we launch. Thanks for your patience – we can’t wait to share it with you soon!
+          We’re working hard to make Git Invoice perfect for you. In the
+          meantime, sign up to know when we launch. Thanks for your patience –
+          we can’t wait to share it with you soon!
         </p>
       </div>
       <iframe

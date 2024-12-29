@@ -1,5 +1,5 @@
-import { GitBranch, GitPullRequest, FileText } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { GitBranch, GitPullRequest, FileText } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function HowItWorks() {
   return (
@@ -20,7 +20,8 @@ export default function HowItWorks() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Generate professional invoices from your GitHub contributions in three simple steps
+            Generate professional invoices from your GitHub contributions in
+            three simple steps
           </motion.p>
         </div>
 
@@ -29,22 +30,25 @@ export default function HowItWorks() {
           <div className="absolute left-[34px] top-0 h-full w-0.5 bg-orange-200 md:hidden"></div>
 
           <div className="space-y-12 md:grid md:grid-cols-3 md:gap-8 md:space-y-0">
-            {[ 
+            {[
               {
                 icon: GitBranch,
                 title: "GitHub Authentication",
-                description: "Securely connect your GitHub account with one click. No complex setup required."
+                description:
+                  "Securely connect your GitHub account with one click. No complex setup required.",
               },
               {
                 icon: GitPullRequest,
                 title: "Select Contributions",
-                description: "Choose repositories, pull requests, and commits to include in your professional invoice."
+                description:
+                  "Choose repositories, pull requests, and commits to include in your professional invoice.",
               },
               {
                 icon: FileText,
                 title: "Generate Invoice",
-                description: "Instantly create detailed, professional invoices ready for submission to clients."
-              }
+                description:
+                  "Instantly create detailed, professional invoices ready for submission to clients.",
+              },
             ].map((step, index) => (
               <motion.div
                 key={index}
@@ -65,8 +69,12 @@ export default function HowItWorks() {
 
                 {/* Text */}
                 <div className="ml-4 md:ml-0">
-                  <h3 className="text-xl font-bold mb-2 tracking-tight ">{step.title}</h3>
-                  <p className="text-gray-500 text-muted-foreground">{step.description}</p>
+                  <h3 className="text-xl font-bold mb-2 tracking-tight ">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-500 text-muted-foreground">
+                    {step.description}
+                  </p>
                 </div>
               </motion.div>
             ))}

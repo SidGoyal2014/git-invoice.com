@@ -17,8 +17,16 @@ export function DownloadButton({ hoursData, customFormData }) {
     // Invoice details (align right)
     doc.setFontSize(10);
     doc.text(`Invoice #: ${customFormData.invoiceNumber}`, 150, 20);
-    doc.text(`Date: ${new Date(customFormData.invoiceDate).toLocaleDateString()}`, 150, 25);
-    doc.text(`Due Date: ${new Date(customFormData.dueDate).toLocaleDateString()}`, 150, 30);
+    doc.text(
+      `Date: ${new Date(customFormData.invoiceDate).toLocaleDateString()}`,
+      150,
+      25,
+    );
+    doc.text(
+      `Due Date: ${new Date(customFormData.dueDate).toLocaleDateString()}`,
+      150,
+      30,
+    );
 
     // Client info
     doc.setFontSize(10);
@@ -40,9 +48,9 @@ export function DownloadButton({ hoursData, customFormData }) {
         yOffset = 20;
       }
       doc.text(description, 14, yOffset);
-      doc.text(hours.toString(), 120, yOffset, { align: 'right' });
-      doc.text(`${rate} EUR`, 160, yOffset, { align: 'right' });
-      doc.text(`${amount.toFixed(2)} EUR`, 190, yOffset, { align: 'right' });
+      doc.text(hours.toString(), 120, yOffset, { align: "right" });
+      doc.text(`${rate} EUR`, 160, yOffset, { align: "right" });
+      doc.text(`${amount.toFixed(2)} EUR`, 190, yOffset, { align: "right" });
       yOffset += 10; // Add extra space after each row
     };
 
@@ -54,9 +62,9 @@ export function DownloadButton({ hoursData, customFormData }) {
     // Table headers
     doc.setTextColor(0, 0, 0);
     doc.text("Description", 14, yOffset);
-    doc.text("Hours Worked", 120, yOffset, { align: 'right' });
-    doc.text("Rate (EUR)", 160, yOffset, { align: 'right' });
-    doc.text("Amount", 190, yOffset, { align: 'right' });
+    doc.text("Hours Worked", 120, yOffset, { align: "right" });
+    doc.text("Rate (EUR)", 160, yOffset, { align: "right" });
+    doc.text("Amount", 190, yOffset, { align: "right" });
     yOffset += 12; // Add space after headers
 
     // Populate the table with PR hours and commit hours (minimal commit info)
@@ -69,7 +77,12 @@ export function DownloadButton({ hoursData, customFormData }) {
 
     hoursData.commitHours.forEach(({ commitSha, title, hours }) => {
       const amount = hours * customFormData.costPerHour;
-      addTableRow(`Commit ${commitSha.slice(0, 7)}`, hours, customFormData.costPerHour, amount); // Show first 7 characters of commit hash
+      addTableRow(
+        `Commit ${commitSha.slice(0, 7)}`,
+        hours,
+        customFormData.costPerHour,
+        amount,
+      ); // Show first 7 characters of commit hash
       subtotal += amount;
     });
 
@@ -81,7 +94,11 @@ export function DownloadButton({ hoursData, customFormData }) {
     doc.setFontSize(12);
     doc.text(`Subtotal: ${subtotal.toFixed(2)} EUR`, 14, yOffset);
     yOffset += 6;
-    doc.text(`Tax (${customFormData.taxRate}%): ${taxAmount.toFixed(2)} EUR`, 14, yOffset);
+    doc.text(
+      `Tax (${customFormData.taxRate}%): ${taxAmount.toFixed(2)} EUR`,
+      14,
+      yOffset,
+    );
     yOffset += 6;
     doc.text(`Total: ${totalAmount.toFixed(2)} EUR`, 14, yOffset);
 
@@ -89,7 +106,11 @@ export function DownloadButton({ hoursData, customFormData }) {
     yOffset += 12;
     doc.setFontSize(10);
     doc.setTextColor(100, 100, 100);
-    doc.text("Payment is due upon receipt. Please make the payment by the due date.", 14, yOffset);
+    doc.text(
+      "Payment is due upon receipt. Please make the payment by the due date.",
+      14,
+      yOffset,
+    );
     yOffset += 6;
     doc.text(`Payment Type: ${customFormData.paymentType}`, 14, yOffset);
 
