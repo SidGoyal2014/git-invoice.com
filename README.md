@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8605fdcf-db1c-4e5d-aeaf-fc0460f44f5e)
+![image](https://github.com/user-attachments/assets/c88e51f7-c40b-4966-b787-fd53d396ecbf)
 
 # git-invoice.com
 Transform your GitHub pull requests and commits into professional invoices effortlessly with Git Invoice, designed for freelancers and developers.
