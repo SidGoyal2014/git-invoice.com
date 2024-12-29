@@ -3,7 +3,7 @@
 # git-invoice.com
 Transform your GitHub pull requests and commits into professional invoices effortlessly with Git Invoice, designed for freelancers and developers.
 
-[git-invoice.com](www.git-invoice.com)
+[git-invoice.com](https://www.git-invoice.com/)
 
 
 
