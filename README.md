@@ -6,20 +6,17 @@ Transform your GitHub pull requests and commits into professional invoices effor
 
 [git-invoice.com](https://www.git-invoice.com/)
 
-## Our Vision
+## 🌟 Our Vision
 
-Do you feel filling timesheets is a confusing process? You're not alone. Most of the developers feel the same.
+Do you find filling out timesheets confusing and time-consuming? You're not alone. 
 
-As a developer, you know how much time it took for an individual task or commit instead of how many hours you spend in a week.
+### Here's what we believe:
+- **As a Developer**: You know how much time an individual task or commit takes better than tracking hours for the entire week.
+- **As a Freelancer**: Tracking progress through commits is far more practical than monitoring entire projects.
 
-As a Freelancer, it's much easier to track down progress if you track your commits instead of whole projects.
+Git Invoice bridges the gap, helping you focus on what you do best: **coding**, while we take care of the invoicing.
 
-
-## Contribute
-
-We're happy to accept contributions. Below is the important information like build process, NextJS docs to help you contribute.
-
-### Getting Started
+## 🚀 Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -45,11 +42,17 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### Learn More
+## 📚 Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### Key Resources:
+- [Next.js Documentation](https://nextjs.org/docs): Learn all about Next.js features and APIs.
+- [Interactive Tutorial](https://nextjs.org/learn): Hands-on guide to mastering Next.js.
+- [Next.js GitHub](https://github.com/vercel/next.js): Explore the source code, provide feedback, and contribute to the framework.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## 🤝 Contribute
+
+We welcome contributions from the community! Whether it's fixing a bug, building a new feature, or improving the documentation, your help is always appreciated.
+
+Fork the repository and create a PR from your branch to our main branch
