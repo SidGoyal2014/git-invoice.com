@@ -6,7 +6,20 @@ Transform your GitHub pull requests and commits into professional invoices effor
 
 [git-invoice.com](https://www.git-invoice.com/)
 
-## Getting Started
+## Our Vision
+
+Do you feel filling timesheets is a confusing process? You're not alone. Most of the developers feel the same.
+
+As a developer, you know how much time it took for an individual task or commit instead of how many hours you spend in a week.
+
+As a Freelancer, it's much easier to track down progress if you track your commits instead of whole projects.
+
+
+## Contribute
+
+We're happy to accept contributions. Below is the important information like build process, NextJS docs to help you to contribute.
+
+### Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -32,7 +45,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
