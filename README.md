@@ -4,6 +4,14 @@
 
 Transform your GitHub pull requests and commits into professional invoices effortlessly with Git Invoice, designed for freelancers and developers.
 
+# Our Vision
+
+Do you feel filling timesheets is a confusing process? You're not alone. Most of the developers feel the same.
+
+As a developer, you know how much time it took for an individual task instead of how many hours you spend in a week.
+
+As a Freelancer, it's much easy to track down progress of you break the projects into different commits.
+
 [git-invoice.com](https://www.git-invoice.com/)
 
 ## Getting Started
