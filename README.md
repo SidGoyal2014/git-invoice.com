@@ -17,7 +17,7 @@ As a Freelancer, it's much easier to track down progress if you track your commi
 
 ## Contribute
 
-We're happy to accept contributions. Below is the important information like build process, NextJS docs to help you to contribute.
+We're happy to accept contributions. Below is the important information like build process, NextJS docs to help you contribute.
 
 ### Getting Started
 
